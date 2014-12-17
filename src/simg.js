@@ -113,10 +113,11 @@
     },
 
     // Trigger download of image.
-    download: function(){
+    download: function(name){
       this.toImg(function(img){
         var a = document.createElement("a");
-        a.download = "chart.png";
+        console.log(name);
+        a.download = name+".png";
         a.href = img.getAttribute('src');
         a.click();
       });
