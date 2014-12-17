@@ -1,10 +1,11 @@
 {
   "name": "Simg",
   "main": "simg.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://github.com/krunkosaurus/simg",
   "authors": [
-    "Mauvis Ledford <mauvis@brainswap.me>"
+    "Mauvis Ledford <mauvis@brainswap.me>",
+    "Clément Renaud <clement.renaud@gmail.com>"
   ],
   "description": "JavaScript Class for converting SVG=>PNG and other such things.",
   "keywords": [
