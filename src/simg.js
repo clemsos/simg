@@ -123,4 +123,14 @@
         a.click();
       });
   };
+
+  downloadWithName: function(name){
+        this.toImg(function(img){
+          var a = document.createElement("a");
+          a.download = name+".png";
+          a.href = img.getAttribute('src');
+          a.click();
+        });
+      }
+  };
 })(this);
