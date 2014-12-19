@@ -113,23 +113,16 @@
     },
 
     // Trigger download of image.
-    download: function(){
+    download: function(filename){
+      var filename = (typeof filename === "undefined") ? "chart" : filename;
+      console.log(filename);
       this.toImg(function(img){
         var a = document.createElement("a");
-        a.download = "chart.png";
+        a.download = filename+".png";
         a.href = img.getAttribute('src');
         a.click();
       });
     },
 
-    // Trigger download of image using a specific name
-    downloadWithName: function(name){
-        this.toImg(function(img){
-          var a = document.createElement("a");
-          a.download = name+".png";
-          a.href = img.getAttribute('src');
-          a.click();
-        });
-      }
   };
 })(this);
